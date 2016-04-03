@@ -26,10 +26,14 @@ Mini demo in Firefox/Linux.
 The fontconfig below is required to override `DejaVuSans` b&w emoji
 on most Linux distributions.
 
+The font is available to Arch Linux users via the [AUR](https://aur.archlinux.org/packages/twemoji-color-font) package. `$ yaourt -S twemoji-color-font`
+
 ```sh
 # 1. Install the font
+
 # 2. Create a font config directory
 mkdir -p ~/.config/fontconfig/
+
 # 3. Override your defaults by creating a ~/.config/fontconfig/fonts.conf
 cat << 'EOF' > ~/.config/fontconfig/fonts.conf
 <?xml version="1.0" encoding="UTF-8"?>
