@@ -85,7 +85,7 @@ $ yaourt -S twemoji-color-font
 
 ## Install on OS X
 Both SVGinOT versions are available from releases:
-https://github.com/eosrei/tweomij-color-font/releases
+https://github.com/eosrei/twemoji-color-font/releases
 
 1. `TwitterColorEmoji-SVGinOT-1.0-beta1.zip` - The regular version of the font
    installs like any other font and can be specifically selected, but OS X will
