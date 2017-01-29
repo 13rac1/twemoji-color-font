@@ -149,10 +149,41 @@ Chrome will use the fallback black and white emoji.*
 
 ## Install on Windows
 
-The font installs like any other font and can be specifically selected, but
-the system will default to the `Segoe UI Emoji` font.
+There are two install options for Windows. Both SVGinOT versions are available
+from releases: https://github.com/eosrei/twemoji-color-font/releases
 
-It can be manually selected in CSS, but making it the default is still TBD.
+### Standard install
+
+The regular version of the font installs like any other font and can be
+specifically selected, but Windows will default to the `Segoe UI Emoji`
+font for emoji characters. Download:
+https://github.com/eosrei/emojione-color-font/releases/download/v1.3/EmojiOneColor-SVGinOT-1.3.zip
+
+### Replace the default Windows emoji fonts
+
+Windows 7, 8, 10 use emoji from both Segoe UI Symbol and Segoe UI Emoji. We
+need to replace both fonts, but keep the existing symbol characters from
+Segoe UI Symbol.
+
+This package contains an install script that will generate both fonts (or
+in Windows 7, just Segoe UI Symbol) and install them for you. Running the
+install script requires both [Python][16] and pip in the PATH.
+
+1. Download the most recent Python 3 for Windows: https://www.python.org/downloads/windows/
+2. Start the installer, select "Add Python 3.6 to PATH" and finish the install process.
+3. Download Twitter Color Emoji Windows package from releases:
+https://github.com/eosrei/twemoji-color-font/releases/download/v1.2/TwitterColorEmoji-SVGinOT-Win-1.2.zip
+4. Uncompress the file.
+5. Open the new TwitterColorEmoji directory.
+7. Run install.cmd. *Note: This will take some time.*
+8. Install both new fonts when requested.
+9. Done!
+
+[16]:https://www.python.org/downloads/windows/
+
+*Reiterating: Only FireFox supports the SVGinOT color emoji for now. IE and
+Chrome will use the fallback black and white emoji.*
+
 
 ## Building
 Overview:
