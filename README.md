@@ -51,19 +51,32 @@ from releases: https://github.com/eosrei/twemoji-color-font/releases
 *Note: This requires `Bitstream Vera` is installed and will change your
 systems default serif, sans-serif and monospace fonts.*
 
-### Why Bitstream Vera
+### Change default font on Linux
 The default serif, sans-serif and monospace font for most Linux distributions is
-`DejaVu`. `DejaVu` includes a wide range of symbols which override the
-`Twitter Color Emoji` characters. The previous solution was to make
-`Twitter Color Emoji` the default system font, but that causes a number of issues.
-A better solution is a different font that doesn't override any emoji characters
-such as `Bitstream Vera`. `Bitstream Vera` is the source of the glyphs used in
-`DejaVu`, so it's not very different. 99%+ of people will not notice the
-difference.
-
-### Additional default font options
-The `Noto` and `Roboto` font families conflict far less than `DejaVu`. You may
-want to try them. Primary issues are the 0x2639 and 0x263a characters.
+`DejaVu`. `Twitter Color Emoji` uses it as foundation in order to provide consistent
+experience, but it might override system defaults if they are different from `DejaVu`.
+If you want to use other font and support emoji at the same time, create a file
+`~/.config/fontconfig/fonts.conf` or change existing based on following example:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<fontconfig>
+  <alias binding="strong">
+    <family>serif</family>
+    <prefer><family>Twitter Color Emoji</family></prefer>
+    <default><family>DejaVu Serif</family></default>
+  </alias>
+  <alias binding="strong">
+    <family>sans-serif</family>
+    <prefer><family>Twitter Color Emoji</family></prefer>
+    <default><family>DejaVu Sans</family></default>
+  </alias>
+  <alias binding="strong">
+    <family>monospace</family>
+    <prefer><family>Twitter Color Emoji</family></prefer>
+    <default><family>DejaVu Sans Mono</family></default>
+  </alias>
+</fontconfig>
+```
 
 ### Known issues
 
