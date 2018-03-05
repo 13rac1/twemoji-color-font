@@ -48,8 +48,7 @@ SVGinOT Font demos (Firefox only):
 The font can be installed for a user or system-wide. Get the latest version
 from releases: https://github.com/eosrei/twemoji-color-font/releases
 
-*Note: This requires `Bitstream Vera` is installed and will change your
-systems default serif, sans-serif and monospace fonts.*
+*Note: This will change your default serif, sans-serif and monospace fonts to `DejaVu`.*
 
 ### Change default font on Linux
 The default serif, sans-serif and monospace font for most Linux distributions is

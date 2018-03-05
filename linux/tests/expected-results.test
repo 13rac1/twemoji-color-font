@@ -1,52 +1,40 @@
 Font: sans
-Vera.ttf: "Bitstream Vera Sans" "Roman"
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
 Font: sans-serif
-Vera.ttf: "Bitstream Vera Sans" "Roman"
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
 Font: serif
-VeraSe.ttf: "Bitstream Vera Serif" "Roman"
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
+DejaVuSerif.ttf: "DejaVu Serif" "Book"
 
 Font: mono
-VeraMono.ttf: "Bitstream Vera Sans Mono" "Roman"
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
+DejaVuSansMono.ttf: "DejaVu Sans Mono" "Book"
 
 Font: monospace
-VeraMono.ttf: "Bitstream Vera Sans Mono" "Roman"
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-
-Font: Bitstream Vera Sans
-Vera.ttf: "Bitstream Vera Sans" "Roman"
-TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-
-Font: Bitstream Vera Serif
-VeraSe.ttf: "Bitstream Vera Serif" "Roman"
-TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-
-Font: Bitstream Vera Sans Mono
-VeraMono.ttf: "Bitstream Vera Sans Mono" "Roman"
-TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
+DejaVuSansMono.ttf: "DejaVu Sans Mono" "Book"
 
 Font: emoji
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
 Font: Twitter Color Emoji
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
 Font: Apple Color Emoji
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
 Font: Segoe UI Emoji
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
 Font: Noto Color Emoji
 TwitterColorEmoji-SVGinOT.ttf: "Twitter Color Emoji" "Regular"
-Vera.ttf: "Bitstream Vera Sans" "Roman"
+DejaVuSans.ttf: "DejaVu Sans" "Book"
 
