@@ -11,8 +11,7 @@ Architecture: all
 Multi-Arch: foreign
 Depends:
   ${misc:Depends},
-  fontconfig,
-  ttf-bitstream-vera
+  fontconfig
 Enhances:
   firefox
 Description: Twitter Emoji color emoji SVGinOT font

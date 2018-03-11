@@ -11,7 +11,7 @@ glyph_translate_y: 150
 # Glyphs height is 2048, SVGs height is 45 x 2.048.
 # color_transform(y) = - 150/2048*45*2.048
 color_transform: translate(0 -6.75)
-# Space width matching DejaVu Sans and Bitstream Vera Sans.
+# Space width matching DejaVu Sans.
 width_space: 561
 table_name:
   copyright: >

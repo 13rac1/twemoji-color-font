@@ -2,15 +2,7 @@
 #https://github.com/eosrei/twemoji-color-font
 echo "Twitter Color Emoji font installer for Linux\n"
 
-# Check for Bitstream Vera
-fc-list | grep "Bitstream Vera" > /dev/null
-RETURN=$?
-if [ $RETURN -ne 0 ];then
-  echo "Bitstream Vera font family not found. Please install it:"
-  echo "sudo apt-get install ttf-bitstream-vera"
-  exit 1
-fi
-echo "NOTE: Changing default font family to Bitstream Vera"
+echo "NOTE: Changing default font family to DejaVu"
 
 # Stop on errors
 set -e
