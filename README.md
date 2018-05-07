@@ -115,7 +115,7 @@ Gentoo repository: https://github.com/jorgicio/jorgicio-gentoo
 # Install layman using Portage with USE="git" enabled, the default.
 emerge layman
 # Add the repo.
-layman -s jorgicio
+layman -a jorgicio
 # Install the package.
 emerge twemoji-color-font
 ```
