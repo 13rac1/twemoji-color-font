@@ -1,6 +1,6 @@
 #!/bin/sh
 #https://github.com/eosrei/twemoji-color-font
-echo "Twitter Color Emoji font installer for Linux\n"
+echo -e "Twitter Color Emoji font installer for Linux\n"
 
 # Check for Bitstream Vera
 fc-list | grep "Bitstream Vera" > /dev/null
