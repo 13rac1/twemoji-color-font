@@ -22,6 +22,7 @@ compatibility.
 * [Install on Linux](#install-on-linux)
 * [Install on OS X](#install-on-os-x)
 * [Install on Windows](#install-on-windows)
+* [Uninstalling](#uninstalling)
 * [Building](#building)
 * [License](#license)
 
@@ -181,6 +182,10 @@ https://github.com/eosrei/twemoji-color-font/releases/download/v12.0.1/TwitterCo
 
 *Reiterating: Only FireFox and Edge support the SVGinOT color emoji for now. Chrome will use the
 fallback black and white emoji.*
+
+## Uninstalling
+
+There are uninstall scripts for [Windows](https://github.com/eosrei/twemoji-color-font/blob/master/windows/uninstall.cmd) and [Linux](https://github.com/eosrei/twemoji-color-font/blob/master/linux/uninstall.sh) available. 
 
 ## Building
 Overview:
