@@ -185,7 +185,8 @@ fallback black and white emoji.*
 
 ## Uninstalling
 
-There are uninstall scripts for [Windows][17] and [Linux][18] available. They are also included in the release files. 
+There are uninstall scripts for [Windows][17] and [Linux][18] available. They
+are also included in the release files. 
 
 [17]:windows/uninstall.cmd
 [18]:linux/uninstall.sh
