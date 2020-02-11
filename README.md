@@ -180,7 +180,7 @@ https://github.com/eosrei/twemoji-color-font/releases/download/v12.0.1/TwitterCo
 
 [16]:https://www.python.org/downloads/windows/
 
-*Reiterating: Only FireFox and Edge support the SVGinOT color emoji for now. Chrome will use the
+*Reiterating: Only FireFox and Edge (legacy) support the SVGinOT color emoji for now. Chrome and Edge (Chromium based) will use the
 fallback black and white emoji.*
 
 ## Uninstalling
