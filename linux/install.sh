@@ -40,7 +40,7 @@ if [ -f $FONTCONFIG/fonts.conf ];then
   cp $FONTCONFIG/fonts.conf $FONTCONFIG/fonts.bak
 fi
 # Install fonts.conf
-cp fontconfig/56-twemoji-color.conf $FONTCONFIG/conf.d/
+cp fontconfig/46-twemoji-color.conf $FONTCONFIG/conf.d/
 
 echo "Clearing font cache"
 fc-cache -f
