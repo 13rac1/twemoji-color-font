@@ -11,7 +11,7 @@ fi
 FONTCONFIG=$HOME/.config/fontconfig
 
 rm $XDG_DATA_HOME/fonts/TwitterColorEmoji-SVGinOT.ttf
-rm $FONTCONFIG/conf.d/56-twemoji-color.conf
+rm $FONTCONFIG/conf.d/46-twemoji-color.conf
 
 echo "Clearing font cache"
 fc-cache -f
