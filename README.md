@@ -136,10 +136,12 @@ https://github.com/eosrei/twemoji-color-font/releases
 A [Homebrew](https://brew.sh) package is available.
 
 ```sh
-# Tap the caskroom/fonts keg, if needed.
-brew tap caskroom/fonts
+# Tap the brew tap homebrew/cask-fonts keg (caskroom/fonts keg were moved into this).
+brew tap homebrew/cask-fonts
 # Install the font using brew
 brew cask install font-twitter-color-emoji
+# If that doesnt work, try...
+brew install --cask font-twitter-color-emoji
 ```
 
 [12]:https://www.macissues.com/2014/11/21/how-to-change-the-default-system-font-in-mac-os-x/
