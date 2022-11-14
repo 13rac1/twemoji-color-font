@@ -149,6 +149,23 @@ brew install --cask font-twitter-color-emoji
 *Reiterating: Only FireFox supports the SVGinOT color emoji for now. Safari and
 Chrome will use the fallback black and white emoji.*
 
+## Install on FreeBSD
+
+A FreeBSD [port](https://www.freebsd.org/ports/) is available.
+
+Install via package:
+
+```sh
+pkg install twemoji-color-font-ttf
+```
+
+Install via ports:
+
+```sh
+cd /usr/ports/x11-fonts/twemoji-color-font-ttf
+make install clean
+```
+
 ## Install on Windows
 
 There are two standdard install options for Windows. Both SVGinOT versions are available
