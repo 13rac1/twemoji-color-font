@@ -1,0 +1,57 @@
+name: Generate fonts for Windows
+
+on:
+  # allow manually trigger
+  workflow_dispatch:
+
+jobs:
+  get-latest-tag:
+    name: Get latest tag
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ env.TAG }}
+    steps:
+      - name: Get latest release
+        uses: octokit/request-action@v2.x
+        id: get_latest_release
+        with:
+          route: GET /repos/13rac1/twemoji-color-font/releases/latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get the latest tag without v prefix
+        run: |
+          TAG_WITH_V_PREFIX=${{ fromJson(steps.get_latest_release.outputs.data).tag_name }}
+          echo "TAG=${TAG_WITH_V_PREFIX#v}" >> $GITHUB_ENV
+      - name: Summary
+        run: |
+          echo "Latest tag without v prefix is $TAG"
+
+  generate-fonts-for-windows:
+    name: Generate fonts for Windows
+    needs: get-latest-tag
+    runs-on: windows-latest
+    env:
+      TAG: ${{ needs.get-latest-tag.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download latest version of twemoji-color-font from release page
+        uses: robinraju/release-downloader@v1.6
+        with:
+          repository: '13rac1/twemoji-color-font'
+          tag: 'v${{ env.TAG }}'
+          fileName: 'TwitterColorEmoji-SVGinOT-${{ env.TAG }}.zip'
+      - run: unzip TwitterColorEmoji-SVGinOT-${{ env.TAG }}.zip
+      - run: Copy-Item TwitterColorEmoji-SVGinOT-${{ env.TAG }}\TwitterColorEmoji-SVGinOT.ttf .\
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: Copy-Item .\windows\install.cmd .\
+      - run: .\install.cmd
+      - run: Get-ChildItem
+      - run: Copy-Item C:\Windows\Fonts\seguiemj.ttf .\
+      - run: Copy-Item C:\Windows\Fonts\seguisym.ttf .\
+      - name: Upload generated fonts and original fonts
+        uses: actions/upload-artifact@v3
+        with:
+          name: TwitterColorEmoji Fonts for Windows
+          path: '*.ttf'

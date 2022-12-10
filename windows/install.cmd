@@ -4,6 +4,11 @@ SETLOCAL
 @setlocal enableextensions
 @cd /d "%~dp0"
 
+REM We can use the following if statement to check if the script is being run by GitHub Actions
+IF "%GITHUB_ACTIONS%" == "true" (
+    ECHO INFO: script is being run by GitHub Actions
+)
+
 SET MS_EMOJI_FONT_PATH="%SystemRoot%\Fonts\seguiemj.ttf"
 SET MS_FONT_PATH="%SystemRoot%\Fonts\seguisym.ttf"
 SET EMOJI_FONT_PATH="%CD%\TwitterColorEmoji-SVGinOT.ttf"
@@ -101,6 +106,15 @@ IF EXIST %MS_EMOJI_FONT_PATH% (
     ECHO %MS_FONT_PATH%
     ECHO It is not overwritten, and can be reinstalled with uninstall.cmd
 )
+
+REM When the script is being run by GitHub Actions
+REM We skip font installation
+REM Because we only need the script to generate font files
+IF "%GITHUB_ACTIONS%" == "true" (
+    ECHO All Done!
+    EXIT /b
+)
+
 ECHO To finish installation, the font will be opened for you to install.
 ECHO.
 ECHO If the font is in a network path, copy to a local disk and
