@@ -160,6 +160,14 @@ to handle the installation and the future updates.
 choco install twemoji
 ```
 
+You can also use [Scoop](https://scoop.sh) to handle the installation and future updates.
+```sh
+# First, add the `nerd-fonts` bucket
+scoop bucket add nerd-fonts
+# Then you can install the font using Scoop
+scoop install twemoji-color-font
+```
+
 ### Standard install
 
 The regular version of the font installs like any other font and can be
