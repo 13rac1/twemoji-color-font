@@ -151,7 +151,7 @@ Chrome will use the fallback black and white emoji.*
 
 ## Install on Windows
 
-There are two standdard install options for Windows. Both SVGinOT versions are available
+There are two standard install options for Windows. Both SVGinOT versions are available
 from releases: https://github.com/13rac1/twemoji-color-font/releases
 
 You can also use the [Chocolatey package](https://community.chocolatey.org/packages/twemoji)
