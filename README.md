@@ -139,8 +139,6 @@ A [Homebrew](https://brew.sh) package is available.
 # Tap the brew tap homebrew/cask-fonts keg (caskroom/fonts keg were moved into this).
 brew tap homebrew/cask-fonts
 # Install the font using brew
-brew cask install font-twitter-color-emoji
-# If that doesnt work, try...
 brew install --cask font-twitter-color-emoji
 ```
 
