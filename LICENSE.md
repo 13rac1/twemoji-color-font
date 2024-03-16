@@ -1,7 +1,7 @@
 # Licenses
 
-* Copyright 2016-2022 Brad Erickson CC-BY-4.0/MIT
-* Copyright 2016-2022 Twitter, Inc. CC-BY-4.0
+* Copyright 2016-2024 Brad Erickson CC-BY-4.0/MIT
+* Copyright 2016-2024 Twitter, Inc. CC-BY-4.0
 * Copyright 2013 Joe Loughry and Terence Eden MIT
 
 ## Artwork
@@ -20,7 +20,7 @@ A few SVG files of the Twitter Emoji for Everyone project are used to fill in
 where Emoji One is missing characters required to generate a font. Files are
 stored in `assets/svg`.
 
-* Source: https://github.com/twitter/twemoji
+* Source: https://github.com/jdecked/twemoji
 * Art License: Creative Commons Attribution 4.0 International
 
 ## Power Symbol License
