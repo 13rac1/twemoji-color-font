@@ -3,7 +3,7 @@ fonts-twemoji-svginot (15.0.3-1) bionic; urgency=medium
   * Use jdecked/twemoji
   * Update to twemoji 15.0.3.
 
- -- Sego <sego@sego.app>  Sat, 16 Mar 2024 17:20:14 +0200
+ -- Brad Erickson <eosrei@gmail.com>  Sat, 16 Mar 2024 17:20:14 +0200
 
 fonts-twemoji-svginot (14.0.2-1) bionic; urgency=medium
 

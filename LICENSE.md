@@ -1,7 +1,8 @@
 # Licenses
 
 * Copyright 2016-2024 Brad Erickson CC-BY-4.0/MIT
-* Copyright 2016-2024 Twitter, Inc. CC-BY-4.0
+* Copyright 2022–present Jason Sofonia & Justine De Caires CC-BY-4.0
+* Copyright 2014–2021 Twitter CC-BY-4.0
 * Copyright 2013 Joe Loughry and Terence Eden MIT
 
 ## Artwork
