@@ -1,9 +1,15 @@
+fonts-twemoji-svginot (15.1.0-1) bionic; urgency=medium
+
+  * Update to twemoji 15.1.0.
+
+ -- Brad Erickson <eosrei@gmail.com>  Thu, 3 Oct 2024 18:42:13 +0700
+
 fonts-twemoji-svginot (15.0.3-1) bionic; urgency=medium
 
   * Use jdecked/twemoji
   * Update to twemoji 15.0.3.
 
- -- Brad Erickson <eosrei@gmail.com>  Sat, 16 Mar 2024 17:20:14 +0200
+ -- Brad Erickson <eosrei@gmail.com>  Sat, 16 Mar 2024 17:20:14 +0700
 
 fonts-twemoji-svginot (14.0.2-1) bionic; urgency=medium
 
