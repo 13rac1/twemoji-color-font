@@ -39,16 +39,16 @@ WHERE python /q || (
     GOTO :ERROR
 )
 
-WHERE pip.exe /q || (
+WHERE pip /q || (
     ECHO.
-    ECHO Pip.exe not found, install or add to PATH
+    ECHO Pip not found, install or add to PATH
     ECHO.
     GOTO :ERROR
 )
 
 ECHO Ensuring the latest FontTools is installed.
 
-pip.exe install --upgrade fonttools
+call pip install --upgrade fonttools
 
 WHERE ttx /q || (
     ECHO.
@@ -60,23 +60,23 @@ WHERE ttx /q || (
 PUSHD %TEMP%
 IF EXIST %MS_EMOJI_FONT_PATH% (
     ECHO Creating new Segoe UI Emoji font from Twitter Color Emoji
-    ttx -t "name" -o "emjname.ttx" %MS_EMOJI_FONT_PATH% || GOTO :ERROR
-    ttx -o %FINAL_EMJ_FONT_PATH% -m %EMOJI_FONT_PATH% "emjname.ttx" || GOTO :ERROR
-    DEL "emjname.ttx"
+    call ttx -t "name" -o "emjname.ttx" %MS_EMOJI_FONT_PATH% || GOTO :ERROR
+    call ttx -o %FINAL_EMJ_FONT_PATH% -m %EMOJI_FONT_PATH% "%CD%\emjname.ttx" || GOTO :ERROR
+    DEL "%CD%\emjname.ttx"
 )
 
 ECHO Creating new Segoe UI Symbol font from Twitter Color Emoji
 REM Merge Segoe UI Symbol into TwitterColorEmoji, this keeps
 REM TwitterColorEmoji's glyph ids intact for the 'SVG ' table data
-pyftmerge %EMOJI_FONT_PATH% %MS_FONT_PATH%
+call pyftmerge %EMOJI_FONT_PATH% %MS_FONT_PATH%
 ECHO Dumping SVG emojis
-ttx -t "SVG " -o "svg.ttx" %EMOJI_FONT_PATH% || GOTO :ERROR
-ttx -t "name" -o "name.ttx" %MS_FONT_PATH% || GOTO :ERROR
+call ttx -t "SVG " -o "svg.ttx" %EMOJI_FONT_PATH% || GOTO :ERROR
+call ttx -t "name" -o "name.ttx" %MS_FONT_PATH% || GOTO :ERROR
 ECHO Merging in dumped emojis
-ttx -o "almost.ttf" -m "merged.ttf" "name.ttx" || GOTO :ERROR
+call ttx -o "almost.ttf" -m "merged.ttf" "name.ttx" || GOTO :ERROR
 DEL "merged.ttf"
 DEL "name.ttx"
-ttx -o %FINAL_FONT_PATH% -m "almost.ttf" "svg.ttx" || GOTO :ERROR
+call ttx -o %FINAL_FONT_PATH% -m "almost.ttf" "svg.ttx" || GOTO :ERROR
 DEL "almost.ttf"
 DEL "svg.ttx"
 REM Get back to working directory.
